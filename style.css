@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange-crl :hsl(31, 77%, 52%);
+    --cyan-crl: hsl(184, 100%, 22%);
+    --dark-cyan-crl:  hsl(179, 100%, 13%);
+    --white-crl : hsla(0, 0%, 100%, 0.75);
+    --light-grey-crl: hsl(0, 0%, 95%);
+    --fw-700: 700;
+    --fw-400: 400;
+    --ff-deca: "Lexend Deca", sans-serif;
+    --ff-shoulder :  "Big Shoulders Display", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    padding-inline: 1rem;
+    place-content: center;
+    font-family: var(--ff-deca);
+    background-color: var(--light-grey-crl);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.wrapper { 
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+}
+
+/* main section */
+
+.card {
+    display: grid;
+    padding: 3rem 2rem;
+    gap: 1.7rem;
+}
+
+
+h1 {
+    font-family: var(--ff-shoulder);
+    color: var(--light-grey-crl);
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+p {
+    color: var(--white-crl);
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin-bottom: 2rem;
+    
+}
+
+.link-orange {
+    background-color: var(--orange-crl);
+    color: var(--light-grey-crl);
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--light-grey-crl);
+}
+.link-cyan {
+    background-color: var(--cyan-crl);
+    color: var(--light-grey-crl);
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--light-grey-crl);
+}
+.link-darkcyan {
+    background-color: var(--dark-cyan-crl);
+    color: var(--light-grey-crl);
+    font-size: 0.8rem;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid var(--light-grey-crl);
+}
+
+.orange {
+    background-color: var(--orange-crl);
+}
+
+.cyan {
+    background-color: var(--cyan-crl);
+}
+
+.darkcyan {
+    background-color: var(--dark-cyan-crl);
+}
+
+@media ( max-width: 605px) {
+    .wrapper {
+       flex-direction: column; 
+    }
+
+    .card {
+        max-width: 308px;
+    }
+}
